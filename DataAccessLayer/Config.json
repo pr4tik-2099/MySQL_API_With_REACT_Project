@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost:3306;Database=svu_db;User=root;Password=pratik2099;"
+  }
+}

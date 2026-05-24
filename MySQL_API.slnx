@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="BusinessLogicLayer/BusinessLogicLayer.csproj" Id="10894e01-8382-45e4-b589-c841fe9744c6" />
+  <Project Path="DataAccessLayer/DataAccessLayer.csproj" Id="21583d9f-776a-4d51-a668-fbade8623208" />
+  <Project Path="MySQL_API/MySQL_API.csproj" />
+  <Project Path="ReactPresentation/reactpresentation.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
