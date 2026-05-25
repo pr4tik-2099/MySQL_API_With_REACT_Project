@@ -19,8 +19,20 @@ namespace MySQL_API.Controllers
         [HttpGet("GetStudent")]
         public IActionResult Get()
         {
-            var students = BLService.GetStudents();
-            return Ok(students);
+            try
+            {
+                var students = BLService.GetStudents();
+                if (students == null || students.Count == 0)
+                {
+                    return NotFound(new { message = "No students found" });
+                }
+                return Ok(new { success = true, data = students });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, 
+                    new { success = false, message = ex.Message });
+            }
         }
     }
 }
